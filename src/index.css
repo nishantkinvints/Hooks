@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main_list ul li{
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  background-color: black;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.main_list ul li.active{
+  background-color: tomato;
+}
+.main_list{
+  display: flex;
+}
+.main_list ul + ul{
+  margin-left: 30px;
+}
+.togglediv{
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.togglediv.active{
+  display: none;
+}

@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Fullpage from './Component/fullpage';
+import Listcomponent from './Component/Listcomponent';
+import Api from './Component/fetch';
+import Wrap_div from './Component/wrap_div';
+import Child_wrap_div from './Component/child_wrap_div';
+import Reduxaction from './Component/Reduxaction';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Listcomponent />
+        <Api />
+        <Wrap_div subtext="wrap_div_content">
+        <Child_wrap_div />
+        </Wrap_div>
+        <Reduxaction />
+
+
     </div>
   );
 }
